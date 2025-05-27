@@ -49,10 +49,83 @@ Projede genel anlamda 2 farklı bölüm bulunmaktadır;<br/>
 
 ### :triangular_flag_on_post: Vitrin Paneli
 <div align="center">
-  <img src="https://github.com/melihcolak0/HotelierAPI/tree/01ff3faf37fb98b5e0ea37857291a94a229d1eaa/ss" alt="image alt">
+  <img src="https://github.com/melihcolak0/HotelierAPI/blob/33ebd051ef314a3783e9df68ebd99ad16ce7cb16/ss/localhost_47007_Default_Index.png" alt="image alt">
 </div>
 <div align="center">
-  <img src="https://github.com/melihcolak0/SignalR_MCRestaurant/blob/a9ff7b1ccd5619ef8219d91a7fd1c8c7f0b4e079/ss/localhost_7076_UIMenu_Index.png" alt="image alt">
+  <img src="https://github.com/melihcolak0/HotelierAPI/blob/33ebd051ef314a3783e9df68ebd99ad16ce7cb16/ss/localhost_47007_UIBooking_Index.png" alt="image alt">
 </div>
+<div align="center">
+  <img src="https://github.com/melihcolak0/HotelierAPI/blob/33ebd051ef314a3783e9df68ebd99ad16ce7cb16/ss/localhost_47007_UIContact_Index.png" alt="image alt">
+</div>
+<br/>
 
+### :triangular_flag_on_post: Admin Paneli
+<div align="center">
+  <img src="https://github.com/melihcolak0/HotelierAPI/blob/33ebd051ef314a3783e9df68ebd99ad16ce7cb16/ss/localhost_47007_Dashboard.png" alt="image alt">
+</div>
+<div align="center">
+  <img src="https://github.com/melihcolak0/HotelierAPI/blob/33ebd051ef314a3783e9df68ebd99ad16ce7cb16/ss/localhost_47007_About_Index.png" alt="image alt">
+</div>
+<div align="center">
+  <img src="https://github.com/melihcolak0/HotelierAPI/blob/33ebd051ef314a3783e9df68ebd99ad16ce7cb16/ss/localhost_47007_Room_Index.png" alt="image alt">
+</div>
+<div align="center">
+  <img src="https://github.com/melihcolak0/HotelierAPI/blob/33ebd051ef314a3783e9df68ebd99ad16ce7cb16/ss/localhost_47007_Guest_Index.png" alt="image alt">
+</div>
+<div align="center">
+  <img src="https://github.com/melihcolak0/HotelierAPI/blob/33ebd051ef314a3783e9df68ebd99ad16ce7cb16/ss/localhost_47007_Guest_AddGuest.png" alt="image alt">
+</div>
+<div align="center">
+  <img src="https://github.com/melihcolak0/HotelierAPI/blob/33ebd051ef314a3783e9df68ebd99ad16ce7cb16/ss/localhost_47007_Guest_UpdateGuest_5.png" alt="image alt">
+</div>
+<div align="center">
+  <img src="https://github.com/melihcolak0/HotelierAPI/blob/33ebd051ef314a3783e9df68ebd99ad16ce7cb16/ss/localhost_47007_Booking_Index.png" alt="image alt">
+</div>
+<div align="center">
+  <img src="https://github.com/melihcolak0/HotelierAPI/blob/33ebd051ef314a3783e9df68ebd99ad16ce7cb16/ss/localhost_47007_Contact_Inbox.png" alt="image alt">
+</div>
+<div align="center">
+  <img src="https://github.com/melihcolak0/HotelierAPI/blob/33ebd051ef314a3783e9df68ebd99ad16ce7cb16/ss/localhost_47007_Contact_AddSendMessage.png" alt="image alt">
+</div>
+<div align="center">
+  <img src="https://github.com/melihcolak0/HotelierAPI/blob/33ebd051ef314a3783e9df68ebd99ad16ce7cb16/ss/localhost_47007_Staff_Index.png" alt="image alt">
+</div>
+<div align="center">
+  <img src="https://github.com/melihcolak0/HotelierAPI/blob/33ebd051ef314a3783e9df68ebd99ad16ce7cb16/ss/localhost_47007_WorkLocation_Index.png" alt="image alt">
+</div>
+<div align="center">
+  <img src="https://github.com/melihcolak0/HotelierAPI/blob/33ebd051ef314a3783e9df68ebd99ad16ce7cb16/ss/localhost_47007_User_Index.png" alt="image alt">
+</div>
+<div align="center">
+  <img src="https://github.com/melihcolak0/HotelierAPI/blob/33ebd051ef314a3783e9df68ebd99ad16ce7cb16/ss/localhost_47007_Role_Index.png" alt="image alt">
+</div>
+<div align="center">
+  <img src="https://github.com/melihcolak0/HotelierAPI/blob/33ebd051ef314a3783e9df68ebd99ad16ce7cb16/ss/localhost_47007_RoleAssign_Index.png" alt="image alt">
+</div>
+<div align="center">
+  <img src="https://github.com/melihcolak0/HotelierAPI/blob/33ebd051ef314a3783e9df68ebd99ad16ce7cb16/ss/localhost_47007_RoleAssign_AssignRole_10.png" alt="image alt">
+</div>
+<div align="center">
+  <img src="https://github.com/melihcolak0/HotelierAPI/blob/33ebd051ef314a3783e9df68ebd99ad16ce7cb16/ss/localhost_47007_Service_Index.png" alt="image alt">
+</div>
+<div align="center">
+  <img src="https://github.com/melihcolak0/HotelierAPI/blob/33ebd051ef314a3783e9df68ebd99ad16ce7cb16/ss/localhost_47007_Testimonial_Index.png" alt="image alt">
+</div>
+<div align="center">
+  <img src="https://github.com/melihcolak0/HotelierAPI/blob/33ebd051ef314a3783e9df68ebd99ad16ce7cb16/ss/localhost_47007_FileImage_Index.png" alt="image alt">
+</div>
+<div align="center">
+  <img src="https://github.com/melihcolak0/HotelierAPI/blob/33ebd051ef314a3783e9df68ebd99ad16ce7cb16/ss/localhost_47007_Settings_Index.png" alt="image alt">
+</div>
+<br/>
 
+### :triangular_flag_on_post: Diğer Sayfalar
+<div align="center">
+  <img src="https://github.com/melihcolak0/HotelierAPI/blob/33ebd051ef314a3783e9df68ebd99ad16ce7cb16/ss/localhost_47007_LogIn_Index.png" alt="image alt">
+</div>
+<div align="center">
+  <img src="https://github.com/melihcolak0/HotelierAPI/blob/33ebd051ef314a3783e9df68ebd99ad16ce7cb16/ss/localhost_47007_Register_Index.png" alt="image alt">
+</div>
+<div align="center">
+  <img src="https://github.com/melihcolak0/HotelierAPI/blob/33ebd051ef314a3783e9df68ebd99ad16ce7cb16/ss/localhost_47007_Error_Page404.png" alt="image alt">
+</div>
