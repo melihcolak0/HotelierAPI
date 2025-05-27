@@ -1,0 +1,64 @@
+﻿@model UpdateBookingDto
+@{
+    ViewData["Title"] = "UpdateBooking";
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Rezervasyon Güncelle</h4>
+                    <br />
+                    <div class="basic-form">
+                        <form method="post">
+                            <input type="hidden" asp-for="BookingId" />
+                            <div class="form-group">
+                                <label>Adı ve Soyadı</label>
+                                <input type="text" class="form-control input-flat" asp-for="NameSurname">
+                            </div>
+                            <div class="form-group">
+                                <label>E-Mail</label>
+                                <input type="text" class="form-control input-flat" asp-for="Mail">
+                            </div>
+                            <div class="form-group">
+                                <label>Check-In</label>
+                                <input type="datetime" class="form-control input-flat" asp-for="CheckIn">
+                            </div>
+                            <div class="form-group">
+                                <label>Check-Out</label>
+                                <input type="datetime" class="form-control input-flat" asp-for="CheckOut">
+                            </div>
+                            <div class="form-group">
+                                <label>Yetişkin Sayısı</label>
+                                <input type="number" class="form-control input-flat" asp-for="AdultCount">
+                            </div>
+                            <div class="form-group">
+                                <label>Çocuk Sayısı</label>
+                                <input type="number" class="form-control input-flat" asp-for="ChildCount">
+                            </div>
+                            <div class="form-group">
+                                <label>Oda Sayısı</label>
+                                <input type="number" class="form-control input-flat" asp-for="RoomCount">
+                            </div>
+                            <div class="form-group">
+                                <label>Özel İstekler</label>
+                                <input type="text" class="form-control input-flat" asp-for="SpecialRequest">
+                            </div>
+                            <div class="form-group">
+                                <label>Durum</label>
+                                <input type="text" class="form-control input-flat" asp-for="Status">
+                            </div>
+                            <div class="form-group">
+                                <label>Açıklama</label>
+                                <textarea class="form-control h-150px" rows="6" asp-for="Description"></textarea>
+                            </div>
+                            <button class="btn mb-1 btn btn-primary">Güncelle</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

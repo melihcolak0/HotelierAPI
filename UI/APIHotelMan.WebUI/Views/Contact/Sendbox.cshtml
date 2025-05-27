@@ -1,0 +1,48 @@
+﻿@model List<ResultSendMessageDto>
+@{
+    ViewData["Title"] = "Sendbox";
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="email-left-box">
+                        @await Component.InvokeAsync("_ContactSideBarComponent")
+                    </div>
+                    <div class="email-right-box">
+                        <div class="email-list m-t-15">
+                            @foreach (var item in Model)
+                            {
+                                <div class="message">
+                                    <a href="/Contact/SendboxMessageDetails/@item.SendMessageId">
+                                        <div class="col-mail col-mail-1">
+                                            <div class="email-checkbox">
+                                                <input type="checkbox" id="chk2">
+                                                <label class="toggle" for="chk2"></label>
+                                            </div><span class="star-toggle ti-star"></span>
+                                        </div>
+                                        <div class="col-mail col-mail-2">
+                                            <div class="subject" style="display: flex;">
+                                                <span class="email" style="min-width: 220px; display: inline-block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                                                    @item.ReceiverMail
+                                                </span>
+                                                <span class="message">
+                                                    @(!string.IsNullOrEmpty(item.Message) && item.Message.Length > 120
+                                                        ? item.Message.Substring(0, 120) + "..."
+                                                        : item.Message)
+                                                </span>
+                                            </div>
+                                            <div class="date">@item.SendDate.ToString("dd MMM yy")</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

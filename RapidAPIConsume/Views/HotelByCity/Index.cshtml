@@ -1,0 +1,37 @@
+﻿@model List<HotelAPIViewModel.Result>
+@{
+    Layout = null;
+    int count = 0;
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<div class="container">
+    <br /> <br />
+    @using (Html.BeginForm("Index", "HotelByCity", FormMethod.Post))
+    {
+        <label>Şehir Id</label>
+        <input type="text" class="form-control" name="destId" />
+        <br />
+        <button class="btn btn-success">Otelleri Getir</button>
+    }
+    <br />
+    <table class="table table-bordered">
+        <tr>
+            <th>#</th>
+            <th>Otel</th>
+            <th>Puan</th>
+            <th>Detaylar</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            count++;
+            <tr>
+                <th>@count</th>
+                <td>@item.name</td>
+                <td>@item.reviewScore</td>
+                <td><a href="#" class="btn btn-warning">Detaylar</a></td>
+            </tr>
+        }
+    </table>
+</div>

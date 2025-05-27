@@ -1,0 +1,16 @@
+﻿@model MessageCountViewModel
+<a href="/Contact/AddSendMessage" class="btn btn-primary btn-block"><i class="fa fa-edit font-18 align-middle mr-2"></i> Yeni Mesaj Oluştur</a>
+<div class="mail-list mt-4">
+    <a href="/Contact/Inbox" class="list-group-item border-0 p-r-0"><i class="fa fa-inbox font-18 align-middle mr-2"></i>Gelen Kutusu<span class="badge badge-primary badge-sm float-right m-t-5">@Model.ContactMessageCount</span> </a>
+    <a href="/Contact/Sendbox" class="list-group-item border-0 p-r-0"><i class="fa fa-paper-plane font-18 align-middle mr-2"></i>Giden Mesajlar <span class="badge badge-primary badge-sm float-right m-t-5">@Model.SendMessageCount</span></a>
+    <a href="#" class="list-group-item border-0 p-r-0"><i class="fa fa-star font-18 align-middle mr-2"></i>Önemli </a>
+    <a href="#" class="list-group-item border-0 p-r-0"><i class="fa fa-file-text font-18 align-middle mr-2"></i>Taslaklar</a>
+    <a href="#" class="list-group-item border-0 p-r-0"><i class="fa fa-trash font-18 align-middle mr-2"></i>Çöp Kutusu</a>
+</div>
+<h5 class="mt-5 m-b-10">Kategoriler</h5>
+<div class="list-group mail-list">
+    <a href="#" class="list-group-item border-0"><span class="fa fa-exclamation-circle f-s-14 mr-2"></span>Şikayet</a>
+    <a href="#" class="list-group-item border-0"><span class="fa fa-envelope f-s-14 mr-2"></span>Talep</a>
+    <a href="#" class="list-group-item border-0"><span class="fa fa-life-ring f-s-14 mr-2"></span>Destek</a>
+    <a href="#" class="list-group-item border-0"><span class="fa fa-user f-s-14 mr-2"></span>İş Başvurusu</a>
+</div>

@@ -1,0 +1,45 @@
+﻿@model List<ResultTestimonialDto>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title">
+                        <h4>Referans İşlemleri</h4>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Adı ve Soyadı</th>
+                                    <th>Meslek</th>
+                                    <th>Sil</th>
+                                    <th>Güncelle</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <th>@item.TestimonialId</th>
+                                        <td>@item.NameSurname</td>
+                                        <td>@item.Title</td>
+                                        <td><a href="/Testimonial/DeleteTestimonial/@item.TestimonialId" class="btn mb-1 btn-rounded btn-outline-danger">Sil</a></td>
+                                        <td><a href="/Testimonial/UpdateTestimonial/@item.TestimonialId" class="btn mb-1 btn-rounded btn-outline-warning">Güncelle</a></td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                        <a href="/Testimonial/AddTestimonial" class="btn mb-1 btn-rounded btn-outline-info">Yeni Referans Ekle</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,75 @@
+﻿@model ResultContactDto
+@{
+    ViewData["Title"] = "InboxMessageDetails";
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="email-left-box">
+                        @await Component.InvokeAsync("_ContactSideBarComponent")
+                    </div>
+                    <div class="email-right-box">
+                        <div class="toolbar" role="toolbar">
+                            <div class="btn-group m-b-20">
+                                <button type="button" class="btn btn-light">
+                                    <i class="fa fa-archive"></i>
+                                </button>
+                                <button type="button" class="btn btn-light">
+                                    <i class="fa fa-exclamation-circle"></i>
+                                </button>
+                                <button type="button" class="btn btn-light">
+                                    <i class="fa fa-trash"></i>
+                                </button>
+                            </div>
+                            <div class="btn-group m-b-20">
+                                <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fa fa-folder"></i>  <b class="caret m-l-5"></b>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="javascript: void(0);">Social</a>  <a class="dropdown-item" href="javascript: void(0);">Promotions</a>  <a class="dropdown-item" href="javascript: void(0);">Updates</a>
+                                    <a class="dropdown-item" href="javascript: void(0);">Forums</a>
+                                </div>
+                            </div>
+                            <div class="btn-group m-b-20">
+                                <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fa fa-tag"></i>  <b class="caret m-l-5"></b>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="javascript: void(0);">Updates</a>  <a class="dropdown-item" href="javascript: void(0);">Promotions</a>
+                                    <a class="dropdown-item" href="javascript: void(0);">Forums</a>
+                                </div>
+                            </div>
+                            <div class="btn-group m-b-20">
+                                <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">
+                                    Daha fazlası <span class="caret m-l-5"></span>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="javascript: void(0);">Mark as Unread</a>  <a class="dropdown-item" href="javascript: void(0);">Add to Tasks</a>  <a class="dropdown-item"
+                                                                                                                                                                                       href="javascript: void(0);">Add Star</a>  <a class="dropdown-item" href="javascript: void(0);">Mute</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="read-content">                            
+                            <br />
+                            <div class="media mb-4 mt-1">
+                                <div class="media-body">
+                                    <span class="float-right">@Model.SendDate.ToString("dd MMM yy - HH:mm")</span>
+                                    <h4 class="m-0"><b>@Model.Subject</b></h4><small class="text-muted">From: @Model.NameSurname (@Model.Mail)</small>
+                                </div>
+                            </div>                            
+                            <p>@Model.Message</p>
+                            <hr>                            
+                        </div>
+                        <div class="text-right">
+                            <a class="btn btn-primary" href="/Contact/Inbox">Gelen Kutusu'na Dön</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

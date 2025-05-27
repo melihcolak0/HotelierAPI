@@ -1,0 +1,28 @@
+﻿@model List<ResultDashboardListContactDto>
+<div class="col-xl-3 col-lg-6 col-sm-6 col-xxl-6 d-flex">
+    <div class="card w-100">
+        <div class="card-body">
+            <h4 class="card-title">Son Mesajlar</h4>
+            <div id="activity">
+                @foreach (var item in Model)
+                {
+                    <div class="media border-bottom pt-3 pb-3">
+                        <div class="w-100">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="mb-1">@item.NameSurname</h5>
+                                <small class="text-muted" style="white-space: nowrap;">@item.SendDate.ToString("dd MMM yy - HH:mm")</small>
+                            </div>
+                            <p class="mb-0">
+                                @(string.IsNullOrWhiteSpace(item.Message)
+                                    ? ""
+                                    : item.Message.Length > 88
+                                    ? item.Message.Substring(0, 88) + "..."
+                                    : item.Message)
+                            </p>
+                        </div>
+                    </div>                    
+                }
+            </div>
+        </div>
+    </div>
+</div>

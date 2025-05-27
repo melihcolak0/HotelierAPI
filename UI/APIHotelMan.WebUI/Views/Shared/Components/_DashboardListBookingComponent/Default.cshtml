@@ -1,0 +1,50 @@
+﻿@model List<ResultDashboardListBookingDto>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="card-title">
+                    <h4>Son Misafirlerimiz</h4>
+                </div>
+                <div class="active-member">
+                    <div class="table-responsive">
+                        <table class="table table-xs mb-0">
+                            <thead>
+                                <tr>
+                                    <th>Misafir</th>
+                                    <th>E-Mail</th>
+                                    <th>Check-In</th>
+                                    <th>Check-Out</th>
+                                    <th>Durum</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach(var item in Model)
+                                {
+                                    <tr>
+                                        <td>@item.NameSurname</td>
+                                        <td>@item.Mail</td>
+                                        <td>@item.CheckIn.ToString("dd MMM yy - HH:mm")</td>
+                                        <td>@item.CheckOut.ToString("dd MMM yy - HH:mm")</td>
+                                        @if (item.Status == "Onay Bekliyor")
+                                        {                                            
+                                            <td><i class="fa fa-circle-o text-primary  mr-2"></i> @item.Status</td>
+                                        }
+                                        else if (item.Status == "Onaylandı")
+                                        {
+                                            <td><i class="fa fa-circle-o text-success  mr-2"></i> @item.Status</td>
+                                        }
+                                        else if (item.Status == "İptal Edildi")
+                                        {
+                                            <td><i class="fa fa-circle-o text-danger  mr-2"></i> @item.Status</td>
+                                        }       
+                                    </tr>
+                                }                                                             
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

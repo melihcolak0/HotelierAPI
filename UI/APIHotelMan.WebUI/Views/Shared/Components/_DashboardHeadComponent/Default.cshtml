@@ -1,0 +1,54 @@
+﻿@model ResultDashboardHeadDto
+<div class="row">
+    <div class="col-lg-3 col-sm-6">
+        <div class="card gradient-1">
+            <div class="card-body">
+                <h3 class="card-title text-white">Personel Sayısı</h3>
+                <div class="d-inline-block">
+                    <h2 class="text-white">@Model.StaffCount</h2>
+                    <p class="text-white mb-0">@DateTime.Now.ToString("MMM yyyy")</p>
+                </div>
+                <span class="float-right display-5 opacity-5"><i class="fa fa-user-tie"></i></span>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-sm-6">
+        <div class="card gradient-2">
+            <div class="card-body">
+                <h3 class="card-title text-white">Rezervasyon Sayısı</h3>
+                <div class="d-inline-block">
+                    <h2 class="text-white">@Model.BookingCount</h2>
+                    <p class="text-white mb-0">@DateTime.Now.ToString("MMM yyyy")</p>
+                </div>
+                <span class="float-right display-5 opacity-5"><i class="fa fa-calendar-check"></i></span>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-sm-6">
+        <div class="card gradient-3">
+            <div class="card-body">
+                <h3 class="card-title text-white">Misafir Sayısı</h3>
+                <div class="d-inline-block">
+                    <h2 class="text-white">@Model.GuestCount</h2>
+                    <p class="text-white mb-0">@DateTime.Now.ToString("MMM yyyy")</p>
+                </div>
+                <span class="float-right display-5 opacity-5"><i class="fa fa-users"></i></span>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-sm-6">
+        <div class="card gradient-4">
+            <div class="card-body">
+                <h3 class="card-title text-white">Oda Sayısı</h3>
+                <div class="d-inline-block">
+                    <h2 class="text-white">@Model.RoomCount</h2>
+                    <p class="text-white mb-0">@DateTime.Now.ToString("MMM yyyy")</p>
+                </div>
+                <span class="float-right display-5 opacity-5"><i class="fa fa-bed"></i></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Font Awesome 5 veya 6 CDN (önerilen) -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">

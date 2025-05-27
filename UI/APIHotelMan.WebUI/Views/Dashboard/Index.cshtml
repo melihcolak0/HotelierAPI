@@ -1,0 +1,61 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+}
+<!-- Font Awesome 4 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Pignose Calender -->
+<link href="/adminweb/plugins/pg-calendar/css/pignose.calendar.min.css" rel="stylesheet">
+<!-- Chartist -->
+<link rel="stylesheet" href="/adminweb/plugins/chartist/css/chartist.min.css">
+<link rel="stylesheet" href="/adminweb/plugins/chartist-plugin-tooltips/css/chartist-plugin-tooltip.css">
+<!-- Custom Stylesheet -->
+<link href="/adminweb/css/style.css" rel="stylesheet">
+
+<div class="container-fluid mt-3">
+    @await Component.InvokeAsync("_DashboardHeadComponent")
+
+    @await Component.InvokeAsync("_DashboardListBookingComponent")
+
+    @await Component.InvokeAsync("_DashboardListStaffComponent")  
+
+    <div class="row d-flex flex-wrap">
+        <div class="col-lg-3 col-md-6 d-flex">
+            <div class="card w-100">
+                <div class="card-body px-0">
+                    <h4 class="card-title px-4 mb-3">Yapılacaklar Listesi</h4>
+                    <div class="todo-list">
+                        <div class="tdl-holder">
+                            <div class="tdl-content">
+                                <ul id="todo_list">
+                                    <li><label><input type="checkbox"><i></i><span>Get up</span><a href='#' class="ti-trash"></a></label></li>
+                                    <li><label><input type="checkbox" checked><i></i><span>Stand up</span><a href='#' class="ti-trash"></a></label></li>
+                                    <li><label><input type="checkbox"><i></i><span>Don't give up the fight.</span><a href='#' class="ti-trash"></a></label></li>
+                                    <li><label><input type="checkbox" checked><i></i><span>Do something else</span><a href='#' class="ti-trash"></a></label></li>
+                                </ul>
+                            </div>
+                            <div class="px-4">
+                                <input type="text" class="tdl-new form-control" placeholder="Yeni bir başlık ekle">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        @await Component.InvokeAsync("_DashboardListContactComponent")
+
+        <div class="col-xl-6 col-lg-12 col-sm-12 col-xxl-12 d-flex">
+            <div class="card w-100">
+                <div class="card-body">
+                    <h4 class="card-title mb-0">Dünya Üzerindeki Otellerimiz</h4>
+                    <div id="world-map" style="height: 470px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @await Component.InvokeAsync("_DashboardSubscribeCountComponent")
+</div>

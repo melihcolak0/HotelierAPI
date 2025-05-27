@@ -1,0 +1,16 @@
+﻿using APIHotelMan.EntityLayer.Concrete;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace APIHotelMan.BusinessLayer.Abstract
+{
+    public interface IContactService : IGenericService<Contact>
+    {
+        public int TGetContactMessagesCount();
+        
+        public List<Contact> TGetListLast4ContactMessage();
+    }
+}
