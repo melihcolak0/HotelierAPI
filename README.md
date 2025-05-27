@@ -49,7 +49,7 @@ Projede genel anlamda 2 farklı bölüm bulunmaktadır;<br/>
 
 ### :triangular_flag_on_post: Vitrin Paneli
 <div align="center">
-  <img src="https://github.com/melihcolak0/SignalR_MCRestaurant/blob/a9ff7b1ccd5619ef8219d91a7fd1c8c7f0b4e079/ss/localhost_7076_Default_Index.png" alt="image alt">
+  <img src="https://github.com/melihcolak0/HotelierAPI/tree/01ff3faf37fb98b5e0ea37857291a94a229d1eaa/ss" alt="image alt">
 </div>
 <div align="center">
   <img src="https://github.com/melihcolak0/SignalR_MCRestaurant/blob/a9ff7b1ccd5619ef8219d91a7fd1c8c7f0b4e079/ss/localhost_7076_UIMenu_Index.png" alt="image alt">
